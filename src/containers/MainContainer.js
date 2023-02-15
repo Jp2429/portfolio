@@ -41,7 +41,7 @@ const MainContainer=()=>{
             completionTime:4,
             isFinished:true,
             url:"https://github.com/Jp2429/project_1.git",
-            image:'../images/project1.jpeg'
+            // image:'../images/project1.jpeg'
         },
         {
             id:1,
@@ -50,7 +50,7 @@ const MainContainer=()=>{
             completionTime:"Ongoing",
             isFinished:false,
             url:"https://github.com/Jp2429/pokemon-personal-project.git",
-            image:{project1Image}
+            // image:{project1Image}
         }
 
     ])

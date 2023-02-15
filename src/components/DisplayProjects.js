@@ -5,14 +5,14 @@ import project1Image from '../images/project1.png'
 
 const ProjectDisplayUl=styled.ul`
     list-style:none;
-    display:grid;
+    /*display:grid;
     grid-template-columns:auto auto;
     grid-template-rows:auto auto;
     grid-gap:20px;
-    justify-content:center;
+    justify-content:center; */
 `
 const ProjectDisplayLi=styled.li`
-    box-shadow:3px 4px rgba(0, 0, 0, 0.58);
+    /* box-shadow:3px 4px rgba(0, 0, 0, 0.58);
     border:2px solid black;
     border-radius:15px;
     padding:20px;
@@ -21,16 +21,19 @@ const ProjectDisplayLi=styled.li`
         background-color:whitesmoke;
     }
     
-    
+     */
 `
 const GitHubLinkDiv=styled.div`
+    /* position:absolute;
+    width:350px;
+    max-width:350px; */
     background-color:black;
     padding:15px;
-    margin-left:-20px;
+    /* margin-left:-20px;
     margin-right:-20px;
-    margin-bottom:-20px;
-    border-bottom-left-radius:12px;
-    border-bottom-right-radius:12px;
+    margin-bottom:-20px; */
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
     
 
 `
@@ -41,21 +44,28 @@ const GitHubLink=styled.a`
     text-decoration:none;
     &:hover{
         color:red;
+        transition:0.3s ease
     }
 `
 
 
 const DisplayProject=({projectList})=>{
     const listOfProjectNodes=projectList.map((project)=>{
-        // if(project.id===0){
-        //     // let projectImage=
-        // }
+        const sortImage=()=>{
+            let projectImage=""
+            if(project.id===0){
+                let projectImage=project1Image
+                return projectImage
+            }
+            return projectImage
+        }
+        
         return (
-            <ProjectDisplayLi key={project.id} id="ProjectDisplayLi">
-                    <DivOnHover id="DivOnHover" >
-                        <img src={project.image}/>
+            <ProjectDisplayLi key={project.id} id="project">
+                    <DivOnHover id="image-div" >
+                        <img id="background-img" src={sortImage()}/>
                         {/* style={{ backgroundImage: `url('/images/${project.image}')` }} */}
-                        <div id="TextDivForHovering">
+                        <div id="overlay">
                             <p >testing displayblock</p>
                             {console.log("/images/",project.image)}
                         </div>
@@ -73,7 +83,7 @@ const DisplayProject=({projectList})=>{
 
 
     return(
-        <ProjectDisplayUl>
+        <ProjectDisplayUl id="project-container">
             {listOfProjectNodes}
         </ProjectDisplayUl>
     )
