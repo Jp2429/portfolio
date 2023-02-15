@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import "./DisplayProjects.css"
 import project1Image from '../images/project1.png'
+import personalProjectImage from '../images/personalProject.png'
 
 
 const ProjectDisplayUl=styled.ul`
@@ -27,13 +28,13 @@ const GitHubLinkDiv=styled.div`
     /* position:absolute;
     width:350px;
     max-width:350px; */
-    background-color:black;
-    padding:15px;
+    /* background-color:black; */
+    /* padding:15px; */
     /* margin-left:-20px;
     margin-right:-20px;
     margin-bottom:-20px; */
-    border-bottom-left-radius:4px;
-    border-bottom-right-radius:4px;
+    /* border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px; */
     
 
 `
@@ -51,30 +52,32 @@ const GitHubLink=styled.a`
 
 const DisplayProject=({projectList})=>{
     const listOfProjectNodes=projectList.map((project)=>{
-        const sortImage=()=>{
-            let projectImage=""
-            if(project.id===0){
-                let projectImage=project1Image
-                return projectImage
-            }
-            return projectImage
-        }
+        // const sortImage=()=>{
+        //     let projectImage=""
+        //     if(project.id===0){
+        //         let projectImage=project1Image
+        //         return projectImage
+        //     }else if(project.id===1){
+        //         let projectImage=personalProjectImage
+        //         return projectImage
+        //     }
+        //     return projectImage
+        // }
         
         return (
             <ProjectDisplayLi key={project.id} id="project">
                     <DivOnHover id="image-div" >
-                        <img id="background-img" src={sortImage()}/>
-                        {/* style={{ backgroundImage: `url('/images/${project.image}')` }} */}
+                        <img id="background-img" src={process.env.PUBLIC_URL + "/" + project.imageName}/>
                         <div id="overlay">
-                            <p >testing displayblock</p>
-                            {console.log("/images/",project.image)}
+                            <p id="project-details">testing displayblock</p>
                         </div>
                     </DivOnHover>
-                    <div id="test">
-                        <p>{project.name}-{project.isFinished ? project.completionTime+" Days":"Work in Progress"}-{project.typeOfProject} Project</p>
+                    <div id="tech-div">
+                        <p id="project-title">{project.name}</p>
+                        <p>{project.typeOfProject} Project</p>
+                        <p>{project.isFinished ? "Completed within "+project.completionTime+" Days":"Work in Progress"}</p>                       
                     </div>
-                    {/* <p>Status: </p> */}
-                    <GitHubLinkDiv>
+                    <GitHubLinkDiv id="project-link">
                         <GitHubLink href={project.url}> View on GitHub</GitHubLink>
                     </GitHubLinkDiv>
             </ProjectDisplayLi>

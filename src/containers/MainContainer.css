@@ -1,0 +1,7 @@
+#projects{
+    display: flex;
+  width: 97.2vw;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

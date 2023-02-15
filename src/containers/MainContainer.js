@@ -2,7 +2,7 @@ import Header from "../components/Header"
 import DisplayProjects from "../components/DisplayProjects"
 import React,{useState} from "react"
 import styled from "styled-components"
-import project1Image from '../images/project1.png'
+import './MainContainer.css'
 
 const MainSection = styled.section`
     /* background-color:rgb(42, 113, 236); */
@@ -41,7 +41,7 @@ const MainContainer=()=>{
             completionTime:4,
             isFinished:true,
             url:"https://github.com/Jp2429/project_1.git",
-            // image:'../images/project1.jpeg'
+            imageName:'project1.png'
         },
         {
             id:1,
@@ -50,7 +50,7 @@ const MainContainer=()=>{
             completionTime:"Ongoing",
             isFinished:false,
             url:"https://github.com/Jp2429/pokemon-personal-project.git",
-            // image:{project1Image}
+            imageName:'personalProject.png'
         }
 
     ])
@@ -62,7 +62,7 @@ const MainContainer=()=>{
                 <Header/>
                 {/* <hr></hr> */}
             </HeaderDiv>
-            <DisplayDiv>
+            <DisplayDiv id="projects">
                 <h1>Projects</h1>
                 {/* <img src={project1Image} /> */}
                 <DisplayProjects projectList={projectList}/>
