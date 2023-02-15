@@ -47,9 +47,9 @@ const GitHubLink=styled.a`
 
 const DisplayProject=({projectList})=>{
     const listOfProjectNodes=projectList.map((project)=>{
-        if(project.id===0){
-            // let projectImage=
-        }
+        // if(project.id===0){
+        //     // let projectImage=
+        // }
         return (
             <ProjectDisplayLi key={project.id} id="ProjectDisplayLi">
                     <DivOnHover id="DivOnHover" >
