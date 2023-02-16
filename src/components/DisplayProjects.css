@@ -41,17 +41,18 @@
     
 }
 #project:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 0.7s;
 }
 #project-container{
     display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 70vw;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70vw;
 }
 #project{
+    background-color: white;
     margin: 10px;
     border-radius: 5px;
     position: relative;
@@ -74,16 +75,17 @@
 }
 #project-link{
     display: flex;
-  justify-content: center;
-  align-items: center;
-  background: black;
-  width: 95%;
-  padding: 10px;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    width: 95%;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 

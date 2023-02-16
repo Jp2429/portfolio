@@ -1,35 +1,19 @@
 import Header from "../components/Header"
 import DisplayProjects from "../components/DisplayProjects"
+import About from '../components/About'
 import React,{useState} from "react"
 import styled from "styled-components"
 import './MainContainer.css'
 
 const MainSection = styled.section`
-    /* background-color:rgb(42, 113, 236); */
-    border:3px solid black;
-    /* border-radius:15px; */
-    /* margin-left:20px;
-    margin-right:20px; */
 `
 const HeaderDiv=styled.div`
-    background-color:rgb(42, 113, 236);
-    height:100%;
-    padding:15px;
-    /* border-top-right-radius:12px;
-    border-top-left-radius:12px; */
 `
 const DisplayDiv=styled.div`
-    background-color:white;
-    border-top:2px solid black;
-    padding:15px;
-`
-const SomeDiv=styled.div`
-    background-color:white;
-    border-top:2px solid black;
     padding:20px;
-    border-bottom-right-radius:12px;
-    border-bottom-left-radius:12px;
-    /* border-radius:15px; */
+`
+const AboutDiv=styled.div`
+    padding:20px;
 `
 
 const MainContainer=()=>{
@@ -51,26 +35,36 @@ const MainContainer=()=>{
             isFinished:false,
             url:"https://github.com/Jp2429/pokemon-personal-project.git",
             imageName:'personalProject.png'
+        },
+        {
+            id:2,
+            name:"Marine Life Group Project",
+            typeOfProject:"Group",
+            completionTime:"7",
+            isFinished:true,
+            url:"https://github.com/Jp2429/marine_group_project.git",
+            imageName:"groupProject.png"
         }
 
     ])
 
 
     return (
-        <MainSection>
-            <HeaderDiv>
+        <MainSection id="main-section">
+            <HeaderDiv id="header">
                 <Header/>
-                {/* <hr></hr> */}
             </HeaderDiv>
+            <AboutDiv id="about">
+                <h1 id="about-header">About</h1>
+                <About/>
+                
+            </AboutDiv>
+            <p id="p-line"></p>
             <DisplayDiv id="projects">
-                <h1>Projects</h1>
-                {/* <img src={project1Image} /> */}
+                <h1 id="project-header">Projects</h1>
                 <DisplayProjects projectList={projectList}/>
             </DisplayDiv>
-            <SomeDiv>
-                <h1>Placeholder</h1>
-                
-            </SomeDiv>
+            <p id="p-line"></p>
         </MainSection>
     )
 }
