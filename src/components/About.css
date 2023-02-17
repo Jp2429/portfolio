@@ -1,10 +1,13 @@
 #about-info-div{
-    display:grid;
+    /* display:grid;
     grid-template-columns: 25% 65%;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto; */
+    display:flex;
+    flex-direction: row;
+    gap: 15%;
     background-color: rgba(255, 255, 255, 0.723);
     margin: 10px;
-    padding:5px;
+    padding:15px;
     border-radius: 10px;
     position: relative;
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
@@ -17,16 +20,9 @@
 }
 #personal-image{
     width:165px;
-    /* height:200px; */
     border-radius: 100rem;
     border:2px solid black;
 }
-#p-line{
-    width:75%;
-    margin-top:5%;
-    margin-left:15%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.405) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-bottom:2px solid black;
-    justify-content: center;
-    align-items: center;
+#about-information{
+    text-align: left;
 }

@@ -1,0 +1,59 @@
+#skills-section{
+    display:flex;
+    flex-direction: column;
+    gap: 20%;
+    background-color: rgba(255, 255, 255, 0.723);
+    margin: 10px;
+    padding:15px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    left:5%;
+    justify-content: center;
+}
+#skills-section:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+#skills-div{
+    display:flex;
+    flex-direction: row;
+    gap: 18%;
+    padding:15px;
+    position: relative;
+    justify-content: center;
+}
+#basic-info{
+    display:flex;
+    padding:15px;
+    text-align: justify;
+    width:80%;
+    top:0;
+    left:10%;
+}
+.diff-skills{
+    font-size: 24px;
+    font-weight: bold;
+}
+.languages{
+    font-size:small;
+    text-align:start;
+    left:2.5%;
+}
+.icons {
+    margin-right:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.tech-name {
+    font-size:12px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 0 0 0;
+    margin-left:10px
+}
+.language-link{
+    
+}

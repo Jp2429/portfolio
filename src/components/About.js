@@ -12,6 +12,7 @@ const About=()=>{
                 <img id='personal-image' src={personalImage}/>
             </div>
             <div id="about-information">
+                <h2>My name is John</h2>
                 <p>This will be information about me</p>
             </div>
         </div>

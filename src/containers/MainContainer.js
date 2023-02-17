@@ -1,6 +1,7 @@
 import Header from "../components/Header"
 import DisplayProjects from "../components/DisplayProjects"
 import About from '../components/About'
+import Skills from "../components/Skills"
 import React,{useState} from "react"
 import styled from "styled-components"
 import './MainContainer.css'
@@ -60,11 +61,16 @@ const MainContainer=()=>{
                 
             </AboutDiv>
             <p id="p-line"></p>
+            <div id="skills">
+                <h1 id="skills-header">Skills</h1>
+                <Skills/>
+            </div>
+            <p id="p-line"></p>
             <DisplayDiv id="projects">
                 <h1 id="project-header">Projects</h1>
                 <DisplayProjects projectList={projectList}/>
             </DisplayDiv>
-            <p id="p-line"></p>
+            {/* <p id="p-line"></p> */}
         </MainSection>
     )
 }
