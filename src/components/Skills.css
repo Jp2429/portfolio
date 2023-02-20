@@ -54,6 +54,22 @@
     padding: 10px 0 0 0;
     margin-left:10px
 }
-.language-link{
-    
-}
+@media only screen and (max-width: 320px) {
+    .tech-type-cont {
+      flex-direction: column !important;
+    }
+  
+    .inner-cont {
+      flex-direction: row !important;
+      flex-wrap: wrap;
+    }
+  
+    .tech-name {
+      margin: 10px;
+    }
+  
+    .front-end-cont,
+    .back-end-cont {
+      padding-bottom: 10px;
+    }
+  }
