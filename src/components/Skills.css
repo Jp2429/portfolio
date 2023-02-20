@@ -58,6 +58,12 @@
     .tech-type-cont {
       flex-direction: column !important;
     }
+    #skills-div{
+
+    }
+    #basic-info{
+
+    }
   
     .inner-cont {
       flex-direction: row !important;
