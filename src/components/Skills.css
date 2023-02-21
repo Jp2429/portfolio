@@ -61,8 +61,9 @@
     #skills-div{
 
     }
-    #basic-info{
-
+    #skills-section{
+        display: flex;
+        width:auto;
     }
   
     .inner-cont {
