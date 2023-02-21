@@ -62,7 +62,7 @@
     }
     #skills-section{
         width:70vw;
-        margin-left: -35px;
+        margin-left: -40px;
     }
     #skills-div{
         flex-direction: column !important;
@@ -88,15 +88,18 @@
     }
     #skills-section{
         width:70vw;
-        margin-left: -35px;
+        margin-left: -40px;
     }
     #skills-div{
         flex-direction: column !important;
+        justify-content: center;
+      align-items: center;
     }
   
     .inner-cont {
       flex-direction: row !important;
       flex-wrap: wrap;
+      
     }
   
     .tech-name {
