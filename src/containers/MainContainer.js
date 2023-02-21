@@ -34,7 +34,7 @@ const MainContainer=()=>{
             typeOfProject:"Solo",
             completionTime:"Ongoing",
             isFinished:false,
-            url:"https://github.com/Jp2429/pokemon-personal-project.git",
+            url:"https://jp2429.github.io/pokemon-personal-project/",
             imageName:'personalProject.png'
         },
         {

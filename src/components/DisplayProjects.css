@@ -12,6 +12,20 @@
       height: 155px !important;
     }
   }
+  @media only screen and (max-width: 480px) {
+    .project {
+      width: 90vw;
+    }
+  
+    .image-div img {
+      width: 90vw;
+      height: auto;
+    }
+  
+    .overlay {
+      height: 155px !important;
+    }
+  }
 #background-img{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
