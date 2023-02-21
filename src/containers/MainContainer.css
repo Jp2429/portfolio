@@ -58,12 +58,14 @@
     align-items: center;
 }
 @media only screen and (max-width: 320px) {
-    #about{
-        display:flex;
-        flex-direction: column !important;
+    #p-line{
+        width:90%;
+        margin-left:7%;
     }
-    #skills{
-        display:flex;
-        flex-direction: column !important;
+}
+@media only screen and (max-width: 480px) {
+    #p-line{
+        width:90%;
+        margin-left:7%;
     }
 }

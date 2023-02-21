@@ -29,6 +29,8 @@
 @media only screen and (max-width: 320px) {
     #about-info-div{
         flex-direction: column !important;
+        width:75vw;
+        margin-left: -60px;
     }
     #about-information{
         flex-wrap: wrap;
@@ -37,6 +39,8 @@
 @media only screen and (max-width: 480px) {
     #about-info-div{
         flex-direction: column !important;
+        width:75vw;
+        margin-left: -60px;
     }
     #about-information{
         flex-wrap: wrap;
