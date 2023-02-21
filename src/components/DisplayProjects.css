@@ -1,6 +1,7 @@
 @media only screen and (max-width: 320px) {
-    .project {
+    #project {
       width: 90vw;
+      right:10%;
     }
   
     .image-div img {
@@ -8,13 +9,14 @@
       height: auto;
     }
   
-    .overlay {
+    /* #overlay {
       height: 155px !important;
-    }
+    } */
   }
   @media only screen and (max-width: 480px) {
-    .project {
+    #project {
       width: 90vw;
+      right:10%;
     }
   
     .image-div img {
@@ -22,9 +24,9 @@
       height: auto;
     }
   
-    .overlay {
+    /* #overlay {
       height: 155px !important;
-    }
+    } */
   }
 #background-img{
     border-top-left-radius: 5px;
@@ -64,6 +66,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     width: 70vw;
+    /* left:30%; */
 }
 #project{
     background-color: white;
@@ -71,6 +74,7 @@
     border-radius: 5px;
     position: relative;
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    
 }
 #project-details{
     color: white;
