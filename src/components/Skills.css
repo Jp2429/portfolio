@@ -61,7 +61,8 @@
       flex-direction: column !important;
     }
     #skills-section{
-        width:max-content;
+        width:70vw;
+        margin-left: -35px;
     }
     #skills-div{
         flex-direction: column !important;
@@ -87,7 +88,7 @@
     }
     #skills-section{
         width:70vw;
-        margin-left: -45px;
+        margin-left: -35px;
     }
     #skills-div{
         flex-direction: column !important;
