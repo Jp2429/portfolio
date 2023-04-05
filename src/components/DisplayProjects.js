@@ -27,7 +27,7 @@ const DisplayProject=({projectList})=>{
                     <DivOnHover id="image-div" >
                         <img id="background-img" src={process.env.PUBLIC_URL + "/" + project.imageName}/>
                         <div id="overlay">
-                            <p id="project-details">testing displayblock</p>
+                            <p id="project-details">{project.details}</p>
                         </div>
                     </DivOnHover>
                     <div id="tech-div">

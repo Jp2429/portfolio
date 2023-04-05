@@ -9,9 +9,6 @@
       height: auto;
     }
   
-    /* #overlay {
-      height: 155px !important;
-    } */
   }
   @media only screen and (max-width: 480px) {
     #project {
@@ -24,9 +21,6 @@
       height: auto;
     }
   
-    /* #overlay {
-      height: 155px !important;
-    } */
   }
 #background-img{
     border-top-left-radius: 5px;
@@ -78,6 +72,7 @@
 }
 #project-details{
     color: white;
+    opacity: 1;
     font-weight: bold;
     padding: 0 10px;
     text-align: justify;
