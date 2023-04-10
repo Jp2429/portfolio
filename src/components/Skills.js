@@ -21,7 +21,7 @@ const Skills=()=>{
     return(
         <section id="skills-section">
             <div id="basic-info">
-                <p>As a Full-Stack enthusiast, I have worked with many different technologies both Front-End and Back-End. I really enjoy working with JavaScript, CSS3 and Java</p>
+                <p>As a Full-Stack enthusiast, I have worked with many different technologies both Front-End and Back-End. I really enjoy working with JavaScript, CSS3 and Java.</p>
                 
             </div>
             <div id="skills-div">
