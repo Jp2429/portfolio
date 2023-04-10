@@ -13,7 +13,8 @@ const About=()=>{
             </div>
             <div id="about-information">
                 <h2>My name is John</h2>
-                <p>This will be information about me</p>
+                <p>I am a Junior Software Developer having just graduated from CodeClan</p>
+                <p>I have a deep passion for programming. With an eagerness to learn and work within the tech industry, I am constantly testing and playing with new technologies to improve myself as a developer.</p>
             </div>
         </div>
     )
