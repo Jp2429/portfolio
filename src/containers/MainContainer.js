@@ -65,6 +65,7 @@ const MainContainer=()=>{
 
     return (
         <MainSection id="main-section">
+            <div id="BodyDiv">
             <HeaderDiv id="header">
                 <Header/>
             </HeaderDiv>
@@ -83,6 +84,7 @@ const MainContainer=()=>{
                 <h1 id="project-header">Projects</h1>
                 <DisplayProjects projectList={projectList}/>
             </DisplayDiv>
+            </div>
             {/* <p id="p-line"></p> */}
         </MainSection>
     )
