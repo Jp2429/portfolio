@@ -1,7 +1,4 @@
 #about-info-div{
-    /* display:grid;
-    grid-template-columns: 25% 65%;
-    grid-template-rows: auto auto; */
     display:flex;
     flex-direction: row;
     gap: 5%;
@@ -19,9 +16,12 @@
     transition: 1s;
 }
 #personal-image{
+    margin-top: 25%;
+    height: 70%;
     width:165px;
     border-radius: 100rem;
     border:2px solid black;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 }
 #about-information{
     text-align: left;
